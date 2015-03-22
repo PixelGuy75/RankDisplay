@@ -1,2 +1,2 @@
 # RankDisplay
-Display ranks next to displyname
+Display ranks next to nametag
