@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener{
 		$player = $event->getPlayer();
 		$group = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUser($player)->getGroup();
 		$groupname = $group->getName();
-        $displayrank = "[" . $groupname . "] " . $player->getDisplayName();
+        $displayrank = "Rank: [" . $groupname . "]\n" . $player->getDisplayName();
         $player->setNameTag($displayrank);
     }
 	
