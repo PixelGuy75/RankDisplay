@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener{
 		$player = $event->getPlayer();
 		$group = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUser($player)->getGroup();
 		$groupname = $group->getName();
-        $displayrank = "[" . $groupname . "] " . $player->getName();
+        $displayrank = "[" . $groupname . "] " . $player->getDisplayName();
         $player->setNameTag($displayrank);
     }
 	
@@ -29,7 +29,7 @@ class Main extends PluginBase implements Listener{
 		$player = $event->getPlayer();
 		$group = $this->getServer()->getPluginManager()->getPlugin("PurePerms")->getUser($player)->getGroup();
 		$groupname = $group->getName();
-        $displayrank = "[" . $groupname . "] " . $player->getName();
+        $displayrank = "[" . $groupname . "] " . $player->getDisplayName();
         $player->setNameTag($displayrank);
     }
 }
