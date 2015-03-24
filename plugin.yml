@@ -5,5 +5,4 @@ api: [1.9.0]
 load: POSTWORLD
 author: PixelGuy75
 description: "Displays rank next to displayname over skin"
-depend:
- - PurePerms
+depend: PurePerms
